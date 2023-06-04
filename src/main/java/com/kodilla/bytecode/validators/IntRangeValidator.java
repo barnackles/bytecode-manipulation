@@ -12,8 +12,10 @@ public class IntRangeValidator implements ConstraintValidator<IntRange, Integer>
 
     @Override
     public void initialize(IntRange constraintAnnotation) {
-        int min = constraintAnnotation.min();
-        int max = constraintAnnotation.max();
+        this.min = constraintAnnotation.min();
+        this.max = constraintAnnotation.max();
+
+
     }
 
     @Override
